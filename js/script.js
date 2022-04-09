@@ -1,8 +1,7 @@
 
+document.getElementById("number").innerHTML=0;
 let num =document.getElementById("number").innerHTML;
 let number=Number(num);
-    console.log(number);
-
     function Check(){
         if(number>0){
             document.getElementById("number").style.color="green";
