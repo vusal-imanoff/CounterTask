@@ -1,28 +1,24 @@
 
-document.getElementById("number").innerHTML=0;
+document.getElementById("number").innerHTML=1;
 let num =document.getElementById("number").innerHTML;
 let number=Number(num);
     function Check(){
-        if(number>0){
+        if(number>1){
             document.getElementById("number").style.color="green";
             }
-            else if(number==0){
+            else{
             document.getElementById("number").style.color="black";
             }
-            else{
-            document.getElementById("number").style.color="red";
-            }
     }
-
     function Decrease(){
-        number--;
-        document.getElementById("number").innerHTML=number.toString();
+       if(number>1){
+           number--;
+           document.getElementById("number").innerHTML=number.toString();
         Check();
-       
-        
+       } 
     }
     function Reset(){
-        number=0;
+        number=1;
         document.getElementById("number").innerHTML=number.toString();
         Check();
 
